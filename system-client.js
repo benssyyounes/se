@@ -3,13 +3,13 @@ const mysql = require("mysql");
 const Discord = require("discord.js");
 var mail = require("nodemailer").mail;
 
-global.client = new Discord.Client();
+global.client = new Discord.Client(588685076527841290);
 client.settings = require(`${__dirname}/src/core/settings.json`);
 global.system = require(`${__dirname}/src/core/utils.js`);
 require(`${__dirname}/src/core/EventLoader`)(client);
 
 client.mysql = mysql.createConnection({
-	host: client.settings.mysql.host,
+	host: 588685076527841290,
 	user: client.settings.mysql.user,
 	password: client.settings.mysql.password,
 	database: client.settings.mysql.database
