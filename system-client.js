@@ -1,7 +1,8 @@
-const fs = require("fs");
-const mysql = require("mysql");
-const Discord = require("discord.js");
-var mail = require("nodemailer").mail;
+const Discord = require('discord.js');
+const client = new Discord.Client(588685076527841290);
+var prefix = "$"
+var adminprefix = '$'
+
 
 global.client = new Discord.Client(588685076527841290);
 client.settings = require(`${__dirname}/src/core/settings.json`);
